@@ -1,0 +1,29 @@
+html {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 50px;
+  font-family: sans-serif; }
+
+.challenge {
+  display: grid;
+  grid-template-rows: repeat(4, 130px);
+  grid-template-columns: repeat(4, 150px);
+  grid-gap: 30px;
+  width: 760px;
+  margin: 0 auto; }
+  .challenge > * {
+    padding: 10px;
+    background-color: orangered; }
+
+.header {
+  grid-area: 1 / 1 / 2 / -1; }
+
+.side-bar {
+  grid-area: 2 / 4 / span 3 / 5; }
+
+.main {
+  grid-area: 3 / 1 / span 2 / span 3; }
+
+.footer {
+  grid-area: 5 / 1 / span 3 / -1; }
